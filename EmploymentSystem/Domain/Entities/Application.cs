@@ -2,9 +2,9 @@
 {
     public class Application
     {
-        public int Id { get; set; }
-        public int VacancyId { get; set; }
-        public int ApplicantId { get; set; }
-        public DateTime ApplicationDate { get; set; }
+        public Guid Id { get; set; }
+        public required Vacancy Vacancy { get; set; }
+        public required Applicant Applicant { get; set; }
+        public DateTime AppliedDate { get; set; }
     }
 }
